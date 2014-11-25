@@ -1,5 +1,10 @@
 <div id='container'>
 <!-- Your code here -->
+<form novalidate class = "simple-form">
+  url: <input type = "url" ng-model="link.url" placeholder ="Enter your url" /><br />
+  <p class ="error" ng-show = 'if({{link.url}})'>url is invalid</p>
+  <button ng-click = 'addLink()' >SHORTEN</button>
+{{link.url}}asdasdasd
 
 </div>
 

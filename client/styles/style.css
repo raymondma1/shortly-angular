@@ -145,4 +145,28 @@ input[type=url]:focus {
 .creator .message {
   clear: both;
 }
+.redirect {
+  float: right;
+}
+.topbar-wrapper {
+  width:980px;
+  margin:0 auto;
+  height: 34px;
+  text-align: center;
+  position: relative;
+  line-height: 1;
+}
+.button.raised {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 2px;
+  font-size: 0.9em;
+  background-color: #fff;
+  color: #646464;
+  outline: none;
+  border: none;
+}
 

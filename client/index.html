@@ -4,15 +4,21 @@
     <meta charset="utf-8" />
     <title>Shortly</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+   <script src="lib/jquery/src/jquery.js"></script>
+
   </head>
   <body>
-  <a href="#/links"><button class = 'button.raised'>Link</button></a>
-  <a href="#/shorten"><button>shorten</button></a>
-    <h1>Shortly</h1>
+  <nav class = "navbar navbar-inverse" role="navigation">
+    <a href="#/links"><button type ="button" class ="btn btn-default">Links</button></a>
+    <a href="#/shorten"><button type="button" class ="btn btn-default">Shorten</button></a>
+    <a href='#/signin'><button type="button" class ="btn btn-default">Sign-in</button></a>
+    <a href='#/signup'><button type="button" class ="btn btn-default">Sign-up</button></a>
+    <p class = 'navbar-text'>Shortly</p>
+  </nav>
 
     <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
     <div ng-view></div>
-
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>
 

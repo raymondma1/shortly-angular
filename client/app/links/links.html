@@ -12,7 +12,8 @@
   </br>
   <ul class ='list-group'>
     <li ng-repeat="link in data.links | orderBy:-'created_at'| filter:search" class = 'list-group-item'>{{link.title}} : <a href ="{{link.base_url}}/api/links/{{link.code}}">{{link.base_url}}/api/links/{{link.code}}</a>
-    <span class ="badge">{{link.__v}}</span>
+
+    <span class ="badge">{{link.visits}}</span>
     </li>
   </ul>
   <p>{{searchLinks}}</p>
